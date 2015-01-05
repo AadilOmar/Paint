@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+	
+    <LinearLayout 
+       	android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/menuLayout"
+		android:orientation="horizontal"
+		android:background="#4B8A08"
+		android:layout_weight="2"
+		>
+        
+        <Button
+            android:id="@+id/penButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pen" 
+            />
+         <Button 
+            android:id="@+id/highlighterButton"             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="highlighter"
+            />
+          <Button
+              android:id="@+id/paintButton"
+             android:layout_width="wrap_content"
+           	 android:layout_height="wrap_content"
+             android:text="paint" 
+            />
+          <Button 
+             android:id="@+id/erasorButton"
+             android:layout_width="wrap_content"
+           	 android:layout_height="wrap_content"
+             android:text="erasor" 
+              />
+          <EditText 
+              android:id="@+id/text"
+              android:text="color"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+
+        
+    </LinearLayout>
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:layout_weight="8"
+	    
+	    tools:context=".MainActivity" 
+	    android:id="@+id/layout1">
+	
+	   <!--  <Button
+	        android:id="@+id/pen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:text="pen" />
+	    <Button
+	        android:layout_toRightOf="@+id/pen"
+	        android:id="@+id/paint"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:text="paint" /> -->
+	
+	</RelativeLayout>
+</LinearLayout>
